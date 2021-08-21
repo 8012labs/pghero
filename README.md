@@ -16,6 +16,8 @@ A performance dashboard for Postgres
 The web UI currently [relies on sprockets](https://github.com/ankane/pghero/issues/319). For apps that don't have sprockets, this fork is a quick and dirty solution. 
 
 This fork uses precompiled static assets instead. To use it, first reference it from the gem file, then copy over `public/pghero-assets` to the `public` folder of the host app. 
+
+(Assets were compiled using an exemplar sprockets app.)
 ## Documentation
 
 PgHero is available as a Docker image, Linux package, and Rails engine.
