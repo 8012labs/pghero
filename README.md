@@ -10,6 +10,12 @@ A performance dashboard for Postgres
 
 [![Build Status](https://github.com/ankane/pghero/workflows/build/badge.svg?branch=master)](https://github.com/ankane/pghero/actions) [![Docker Pulls](https://img.shields.io/docker/pulls/ankane/pghero)](https://hub.docker.com/repository/docker/ankane/pghero)
 
+
+## This Fork
+
+The web UI currently [relies on sprockets](https://github.com/ankane/pghero/issues/319). For apps that don't have sprockets, this fork is a quick and dirty solution. 
+
+This fork uses precompiled static assets instead. To use it, first reference it from the gem file, then copy over `public/pghero-assets` to the `public` folder of the host app. 
 ## Documentation
 
 PgHero is available as a Docker image, Linux package, and Rails engine.
